@@ -25,7 +25,9 @@ travis-ci = { repository = "slide-rs/specs" }
 crossbeam-queue = "0.3"
 hashbrown = "0.11"
 # hibitset = { version = "0.6.3", default-features = false }
-hibitset = { git = "https://github.com/minghuaw/hibitset/", branch = "u128", default-features = false }
+# hibitset = { git = "https://github.com/minghuaw/hibitset/", branch = "u128", default-features = false }
+hibitset = { git = "https://gitee.com/minghuaw/hibitset/", branch = "u128", default-features = false }
+
 log = "0.4.8"
 shred = { version = "0.12", default-features = false }
 shrev = "1.1.1"
