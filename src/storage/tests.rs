@@ -121,7 +121,8 @@ mod map_test {
         let mut w = World::new();
         let mut c = create(&mut w);
 
-        let _ = c.insert(ent(1 << 25), Comp(7));
+        // let _ = c.insert(ent(1 << 25), Comp(7));
+        let _ = c.insert(ent(1 << 29), Comp(7));
     }
 }
 
