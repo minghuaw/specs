@@ -122,7 +122,13 @@ mod map_test {
         let mut c = create(&mut w);
 
         // let _ = c.insert(ent(1 << 25), Comp(7));
-        let _ = c.insert(ent(1 << 29), Comp(7));
+        // let _ = c.insert(ent(1 << 29), Comp(7));
+        let _ = c.insert(ent(u32_max()+1), Comp(7));
+    }
+
+    /// A helper function to work around compile time overflow check
+    fn u32_max() -> u32 {
+        u32::MAX
     }
 }
 
