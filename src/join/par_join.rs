@@ -55,7 +55,7 @@ where
     {
         let (keys, values) = unsafe { self.0.open() };
         // Create a bit producer which splits on up to three levels
-        let producer = BitProducer((&keys).iter(), 3);
+        let producer = BitProducer((&keys).iter(), 4);
         // HACK: use `UnsafeCell` to share `values` between threads;
         // this is the unspecified behavior referred to above.
         let values = UnsafeCell::new(values);
